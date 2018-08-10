@@ -1,0 +1,7 @@
+<button (click)="goBack()">返回</button>
+<div *ngIf="story">
+  <h2>EtherScan: <a href="https://etherscan.io/tx/{{story.txHash}}">{{story.txHash}}</a></h2>
+  <p ngPreserveWhitespaces>
+    {{story.fullContent}}
+  </p>
+</div>

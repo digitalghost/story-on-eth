@@ -1,8 +1,12 @@
-<h2>最新上链的故事{{balance}}</h2>
+
 <ul class="stories">
-    <li *ngFor="let story of stories"
-      [class.selected]="story === selectedStory"
-      (click)="onSelect(story)">
-      <span class="badge">{{story.txHash.slice(0,4)}}...{{story.txHash.slice(-4)}}</span> {{story.brief}}
+    <li *ngFor="let story of stories">
+      
+        <span class="badge">
+          <a href="https://etherscan.io/tx/{{story.txHash}}">{{story.txHash.slice(0,4)}}...{{story.txHash.slice(-4)}}</a>
+        </span> 
+        <a routerLink="/detail/{{story.txHash}}">
+          {{story.brief}}
+        </a>
     </li>
 </ul>

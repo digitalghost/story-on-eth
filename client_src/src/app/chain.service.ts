@@ -27,7 +27,7 @@ export class ChainService {
       this._web3Provider = new Web3.providers.HttpProvider('https://mainnet.infura.io/v3/a4fcd22dc2ec4299b5c0afee8dab510e');
     }
     this._web3 = new Web3(this._web3Provider);
-    console.log(this._web3);
+    //console.log(this._web3);
 
   }
 
@@ -64,9 +64,22 @@ export class ChainService {
         if(err != null) {
           reject(err);
         }
-        console.log(_web3);
         resolve(_web3.utils.fromWei(result,"ether"));
       });
     }) as Promise<number>;
   }
+
+  public async getInputStrByTxhash(txHash:string): Promise<string> {
+  
+    return new Promise((resolve, reject) => {
+      let _web3 = this._web3;
+      this._web3.eth.getTransaction(txHash, function (err, result) {
+        if(err != null) {
+          reject(err);
+        }
+        resolve(_web3.utils.hexToUtf8(result.input));
+      });
+    }) as Promise<string>;
+  }
+
 }

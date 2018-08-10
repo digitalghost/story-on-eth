@@ -1,7 +1,6 @@
 import { Story } from './story';
 
 export const Stories: Story[] = [
-    { txHash: "0x2d6a7b0f6adeff38423d4c62cd8b6ccb708ddad85da5d3d06756ad4d8a04a6a2", brief: "北京大学的老师和同学：你们好1！", fullContent:"北京大学的老师和同学：你们好！我是2014级外国语学院的岳昕，是4月9日早上向北京大学递交《信息公开申请表》的八位到场同学之一。我拖着极疲惫的身躯写下这段文字，说明近来发生在我身上的一些事情。" },
-    { txHash: "0x2d6a7b0f6adeff38423d4c62cd8b6ccb708ddad85da5d3d06756ad4d8a04a6a2", brief: "北京大学的老师和同学：你们好2！", fullContent:"北京大学的老师和同学：你们好！我是2014级外国语学院的岳昕，是4月9日早上向北京大学递交《信息公开申请表》的八位到场同学之一。我拖着极疲惫的身躯写下这段文字，说明近来发生在我身上的一些事情。" },
-    { txHash: "0x2d6a7b0f6adeff38423d4c62cd8b6ccb708ddad85da5d3d06756ad4d8a04a6a2", brief: "北京大学的老师和同学：你们好3！", fullContent:"北京大学的老师和同学：你们好！我是2014级外国语学院的岳昕，是4月9日早上向北京大学递交《信息公开申请表》的八位到场同学之一。我拖着极疲惫的身躯写下这段文字，说明近来发生在我身上的一些事情。" },
+    { txHash: "0x2d6a7b0f6adeff38423d4c62cd8b6ccb708ddad85da5d3d06756ad4d8a04a6a2", brief: "北大", fullContent:"北大道歉信" },
+    { txHash: "0xb1ed364e4333aae1da4a901d5231244ba6a35f9421d4607f7cb90d60bf45578a", brief: "疫苗", fullContent:"疫苗之王" },
 ];

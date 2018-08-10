@@ -4,10 +4,12 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { LatestComponent }   from './latest/latest.component';
 import { HottestComponent }   from './hottest/hottest.component';
+import { DetailComponent }   from './detail/detail.component';
 
 const routes: Routes = [
   { path: 'latest', component: LatestComponent },
   { path: 'hottest', component: HottestComponent },
+  { path: 'detail/:txhash', component: DetailComponent },
   { path: '', redirectTo: '/latest', pathMatch: 'full' },
   /*
   { path: 'heroes', component: HeroesComponent },
